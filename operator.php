@@ -64,6 +64,7 @@ $jenisBarang        = "Laptop";
 $hargaSatuan        = 7000000;
 $jumlahbeli         = 2;
 $totalbayar         = $hargaSatuan * $jumlahbeli;
+
 $diskon             = $totalbayar * 0.10;
 $totalsetelahdiskon = $totalbayar - $diskon;
 $bayar              = 13000000;
