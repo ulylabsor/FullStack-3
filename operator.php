@@ -69,7 +69,6 @@ $diskon             = $totalbayar * 0.10;
 $totalsetelahdiskon = $totalbayar - $diskon;
 $bayar              = 13000000;
 $kembalian          = $bayar - $totalsetelahdiskon;
-
 echo "Nama Barang         : " . $namaBarang . "<br>";
 echo "Jenis Barang        : " . $jenisBarang . "<br>";
 echo "Harga Satuan        : Rp." . number_format($hargaSatuan, 0, ',', '.') . "<br>";
