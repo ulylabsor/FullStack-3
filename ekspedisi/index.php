@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require 'koneksi/conn.php';
 require 'koneksi/model.php';
 ?>

@@ -18,7 +18,6 @@
             <h2>Shiping Rates</h2>
             <h2>Ours Network</h2>
             <h2>Service</h2>
-
          </div>
       </div>
       <hr style="width: 100%; border-width: 1px; border-color: rgb(255, 255, 255); ">

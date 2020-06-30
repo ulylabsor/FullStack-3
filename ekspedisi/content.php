@@ -26,7 +26,24 @@ switch ($halaman) {
    case 'about':
       include 'about.php';
       break;
+   case 'register':
+      include 'view/view-register.php';
+      break;
+   case 'login':
+      include 'view/view-login.php';
+      break;
 
+
+      //AKSI FORM
+   case 'act-register':
+      include 'modul/act-register.php';
+      break;
+   case 'act-login':
+      include 'modul/act-login.php';
+      break;
+   case 'act-logout':
+      include 'modul/act-logout.php';
+      break;
    default:
       echo "Halaman tidak ditemukan";
       break;
