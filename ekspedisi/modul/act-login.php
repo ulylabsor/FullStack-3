@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['btnLogin'])) {
    $username     = $_POST['username'];
-   $password     = $_POST['password'];
+   $password     = md5($_POST['password']);
 
-   $cekLogin = cekLogin($username, $password);
+   cekLogin($username, $password);
 }

@@ -19,8 +19,8 @@
                      <a class="nav-item nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'register' ? 'active' : '' : '' ?>" href="?page=register">REGISTER</a>
 
                      <?php
-                     if (isset($_SESSION['user'])) { ?>
-                        <a class="nav-item nav-link"><?= $_SESSION['user'] ?></a>
+                     if (isset($_SESSION['User'])) { ?>
+                        <a class="nav-item nav-link"><?= $_SESSION['User'] ?></a>
                         <a class="nav-item nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'act-logout' ? 'active' : '' : '' ?>" href="?page=act-logout">LOGOUT</a>
                      <?php
                      } else { ?>

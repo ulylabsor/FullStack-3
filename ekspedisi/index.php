@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+ob_start();
 require 'koneksi/conn.php';
 require 'koneksi/model.php';
 ?>

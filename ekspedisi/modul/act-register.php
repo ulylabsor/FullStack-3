@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['btnRegister'])) {
    $username     = $_POST['username'];
-   $password     = $_POST['password'];
+   $password     = md5($_POST['password']);
    $jk           = $_POST['jk'];
    $namaDepan    = $_POST['namaDepan'];
    $namaBelakang = $_POST['namaBelakang'];
