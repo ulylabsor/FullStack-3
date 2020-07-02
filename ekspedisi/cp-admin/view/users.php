@@ -14,6 +14,9 @@
    </div>
 </div>
 
+<?php echo (isset($_SESSION['notif'])) ? $_SESSION['notif'] : '';
+unset($_SESSION['notif'])
+?>
 <div class="table-responsive">
    <table class="table table-striped table-sm">
       <thead>
@@ -42,8 +45,16 @@
                <td><?= $data['status'] ?></td>
                <td><?= $data['created_at'] ?></td>
                <td>
-                  <a href="?page=edit-users" class="text-info">Edit</a> |
-                  <a href="?page=delete-users" class="text-danger">Delete</a>
+                  <a href="?page=edit-users&id=<?= $data['id_user'] ?>" class="text-info">Edit</a> |
+                  <?php
+                  if ($data['level'] == 'admin') {
+                     echo '';
+                  } else { ?>
+                     <a href="?page=act-users&aksi=delete&id=<?= $data['id_user'] ?>" onclick="return confirm('Yakin ingin menghapus data <?= $data['username'] ?>?')" class="text-danger">Delete</a>
+                  <?php
+                  }
+                  ?>
+
                </td>
             </tr>
          <?php endforeach ?>

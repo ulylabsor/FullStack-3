@@ -30,6 +30,9 @@ if (!empty($_SESSION)) {
       case 'register':
          include 'view/view-register.php';
          break;
+      case 'login':
+         include 'view/view-login.php';
+         break;
 
          //AKSI FORM
       case 'act-register':

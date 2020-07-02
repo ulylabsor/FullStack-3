@@ -10,8 +10,17 @@ switch ($halaman) {
    case 'users':
       include 'view/users.php';
       break;
+   case 'add-users':
+      include 'view/add/add-users.php';
+      break;
+   case 'edit-users':
+      include 'view/edit/edit-users.php';
+      break;
 
       //AKSI FORM
+   case 'act-users':
+      include 'modul/act-users.php';
+      break;
    case 'act-logout':
       include 'modul/act-logout.php';
       break;

@@ -10,15 +10,20 @@ function cekLogin($user, $pass)
    if ($cekData > 0) {
       if ($data['password'] == $pass) {
          if ($data['status'] == 'Aktif') {
-            //BIKIN SESSION USERS
-            $_SESSION['IdUser'] = $data['id_user'];
-            $_SESSION['User']   = $data['username'];
-            $_SESSION['Level']  = $data['level'];
-            $_SESSION['Status'] = $data['status'];
 
             if ($data['level'] == 'customer') {
+               //BIKIN SESSION USERS
+               $_SESSION['IdUser'] = $data['id_user'];
+               $_SESSION['User']   = $data['username'];
+               $_SESSION['Level']  = $data['level'];
+               $_SESSION['Status'] = $data['status'];
                header("Location: index.php");
             } else {
+               //BIKIN SESSION USERS
+               $_SESSION['IdUser'] = $data['id_user'];
+               $_SESSION['User']   = $data['username'];
+               $_SESSION['Level']  = $data['level'];
+               $_SESSION['Status'] = $data['status'];
                header("Location: cp-admin");
             }
          } else {
