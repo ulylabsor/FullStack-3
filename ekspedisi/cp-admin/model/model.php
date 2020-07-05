@@ -1,5 +1,6 @@
 <?php
 require 'model_users.php';
+require 'model_layanan.php';
 
 function notif($pesan, $jenis)
 {

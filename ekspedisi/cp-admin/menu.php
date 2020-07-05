@@ -13,6 +13,12 @@
                Data Users
             </a>
          </li>
+         <li class="nav-item">
+            <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'layanan' ? 'active' : '' : '' ?>" href="?page=layanan">
+               <span data-feather="list"></span>
+               Data Layanan
+            </a>
+         </li>
       </ul>
 
       <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
