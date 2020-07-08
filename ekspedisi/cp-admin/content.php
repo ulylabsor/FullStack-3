@@ -7,6 +7,9 @@ switch ($halaman) {
    case 'home':
       include 'view/dashboard.php';
       break;
+   case 'myprofile':
+      include 'view/myprofile.php';
+      break;
    case 'users':
       include 'view/users.php';
       break;
@@ -32,6 +35,9 @@ switch ($halaman) {
       break;
    case 'act-layanan':
       include 'modul/act-layanan.php';
+      break;
+   case 'act-myprofile':
+      include 'modul/act-myprofile.php';
       break;
    case 'act-logout':
       include 'modul/act-logout.php';

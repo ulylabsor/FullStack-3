@@ -1,6 +1,7 @@
 <?php
 require 'model_users.php';
 require 'model_layanan.php';
+require 'model_profile.php';
 
 function notif($pesan, $jenis)
 {
@@ -9,6 +10,6 @@ function notif($pesan, $jenis)
    } elseif ($jenis == 2) {
       $_SESSION['notif'] = "<div class='alert alert-warning'>$pesan</div>";
    } else {
-      $_SESSION['notif'] = "<div class='alert alert-  '>$pesan</div>";
+      $_SESSION['notif'] = "<div class='alert alert-danger'>$pesan</div>";
    }
 }
