@@ -1,9 +1,13 @@
 <?php
-function getLayanan()
+function getLayanan($cari = '')
 {
    global $koneksi;
    $layanan = [];
-   $sql = "SELECT * FROM tb_layanan";
+   if ($cari == '') {
+      $sql = "SELECT * FROM tb_layanan";
+   } else {
+      $sql = "SELECT * FROM tb_layanan WHERE layanan like '%$cari%' OR keterangan like '%$cari%' or link like '%$cari%'";
+   }
    $query = mysqli_query($koneksi, $sql);
    while ($data = mysqli_fetch_assoc($query)) {
       $layanan[] = $data;

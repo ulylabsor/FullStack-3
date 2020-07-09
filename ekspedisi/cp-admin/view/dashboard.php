@@ -11,3 +11,8 @@
       </button>
    </div>
 </div>
+<div class="row">
+   <div class="col-md-12">
+      <h3><b class="text-danger"><?= $_SESSION['User'] ?></b> Anda Login sebagai <b class="text-info"><?= $_SESSION['Level'] ?></b></h3>
+   </div>
+</div>

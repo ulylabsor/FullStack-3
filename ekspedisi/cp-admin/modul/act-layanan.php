@@ -1,8 +1,8 @@
 <?php
 if (isset($_POST['btn-AddLayanan'])) {
-   $layanan    = $_POST['layanan'];
-   $link       = $_POST['link'];
-   $keterangan = $_POST['keterangan'];
+   $layanan    = htmlspecialchars($_POST['layanan']);
+   $link       = htmlspecialchars($_POST['link']);
+   $keterangan = htmlspecialchars($_POST['keterangan']);
 
    $icon       = $_FILES['icon']['name'];
    $sizeIcon   = $_FILES['icon']['size'];

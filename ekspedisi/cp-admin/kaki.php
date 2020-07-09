@@ -6,3 +6,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 <script src="https://getbootstrap.com/docs/4.5/examples/dashboard/dashboard.js"></script>
+<script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+<script>
+   $(document).ready(function() {
+      $('#myTable').DataTable();
+   });
+</script>

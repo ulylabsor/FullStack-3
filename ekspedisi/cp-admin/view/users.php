@@ -18,7 +18,7 @@
 unset($_SESSION['notif'])
 ?>
 <div class="table-responsive">
-   <table class="table table-striped table-sm">
+   <table class="table table-striped table-sm" id="myTable">
       <thead>
          <tr>
             <th>#</th>

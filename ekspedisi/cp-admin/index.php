@@ -4,8 +4,10 @@ ob_start();
 require '../koneksi/conn.php';
 require 'model/model.php';
 
-if (empty($_SESSION['level'])) {
-   if ($_SESSION['Level'] !== 'admin') {
+if (empty($_SESSION['Level'])) {
+   header("Location: ../?page=login");
+} else {
+   if ($_SESSION['Level'] == 'customer') {
       header("Location: ../?page=login");
    }
 }
